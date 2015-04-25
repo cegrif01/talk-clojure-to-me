@@ -1,7 +1,16 @@
 (ns talk-clojure-to-me.core
   (:gen-class))
 
+;;;;Let's play around with the REPL a bit
+;;;;Conditionals
+(defn condy
+  [x]
+  (if (= x 2)
+    (println "two")
+    (println "sorry dude, you're not two")))
+
+
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Talk Clojure to me"
   [& args]
-  (println "Hello, World!"))
+  (condy 2))
