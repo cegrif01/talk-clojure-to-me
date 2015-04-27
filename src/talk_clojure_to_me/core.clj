@@ -9,8 +9,17 @@
     (println "two")
     (println "sorry dude, you're not two")))
 
+;;;vectors
+
+;;;store a vector in a variable
+(def my-list [1 2 3])
+
+;;;add an element to a vector
+
+
+
 
 (defn -main
   "Talk Clojure to me"
   [& args]
-  (condy 2))
+  (println my-list))
