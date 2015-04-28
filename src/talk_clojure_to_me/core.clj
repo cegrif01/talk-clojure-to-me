@@ -8,9 +8,11 @@
   [some-list-or-vector]
   (map #(* % 2) some-list-or-vector))
 
+;;Using the apply function
 (defn multiply-together
   [some-list-or-vector]
   (apply * some-list-or-vector))
+
 
 (defn -main
   "Talk Clojure to me"
@@ -20,5 +22,8 @@
 
 
   (println (multiply-together my-list))
+
+  ;;calling map on more than one element will combine them
+  (println (map str ["a" "b" "c"] ["A" "B" "C"] ["d" "e" "z"]))
 
   )
